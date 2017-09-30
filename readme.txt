@@ -21,3 +21,8 @@ Git commands to commit a new repo
     // go to github and create a new repo
     git remote add origin https://github.com/vdkhiem/node-todo-api.git
     git push -u origin master
+
+Git commands to update repo
+    git add .
+    git commit -m "Update ..."
+    git push

@@ -5,10 +5,10 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
         return console.log('Unable to connect to MongoDB');
     }
     console.log('Connected to MongoDB');
-    //GetTodos(db);
+    GetTodos(db);
     //GetTodoByID(db, '59cf00a5de06bcdac0725161');
     //GetTodosCount(db);
-    GetUsersByName(db, 'Vo Duy Khiem');
+    //GetUsersByName(db, 'Vo Duy Khiem');
     db.close();
 });
 

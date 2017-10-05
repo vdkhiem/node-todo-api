@@ -18,6 +18,8 @@ Commands
     npm i mongodb@2.2.5 //Install mongodb library
     npm i mongoose@4.5.9 --save
     npm i express@4.14.0 body-parser@1.15.2 --save
+    npm i expect@1.20.2 mocha@3.0.2 nodemon@1.10.2 supertest@2.0.0 --save-dev
+    npm run test-watch //run unit test
 
 Git commands to commit a new repo
     git init

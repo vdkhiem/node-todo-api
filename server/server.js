@@ -19,8 +19,15 @@ app.post('/todos', (req, res) => {
     }, (e) => {
         res.status(400).send(e);
     });
-    //console.log(req.body); //body is stored in bodyParser
 });
+
+app.get('/todos', (req, res) => {
+    Todo.find().then((todos) => {
+        res.send({todos});
+    }, (error) => {
+        res.status(400).send(error);
+    });
+})
 
 app.listen(3000, () => {
     console.log('Webserver started on port 3000');
